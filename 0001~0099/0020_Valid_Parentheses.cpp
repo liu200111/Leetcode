@@ -16,7 +16,7 @@ public:
                 else return false;
             }
         }
-        if ( brackets_left.length() > 0 ) return false;
+        if ( brackets_left.length() > 0 ) return false; //還存在沒被配對到的左括弧
         else return true;
     }
     bool checkisClose(char a, char b) {
