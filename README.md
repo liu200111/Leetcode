@@ -1,9 +1,8 @@
 ## Leetcode
 
-**Challenge: 
+Challenge: 
 
-Solve one LeetCode problem daily until graduating from graduate school.  **
-
+Solve one LeetCode problem daily until graduating from graduate school. 
 
 Records: 
 
