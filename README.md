@@ -1,4 +1,4 @@
-## Challenge: Solve one LeetCode problem daily until graduating from graduate school
+## Challenge: Solve one LeetCode problem daily until graduating
 
 
 Records: 
