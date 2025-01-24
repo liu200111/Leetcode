@@ -8,7 +8,7 @@ public:
             for ( int j = s.length() ; j > i + 1 ; --j ) {
                 if ( s[j - 1] == s[i] ) {
                     str = s.substr(i, j - i);
-                    if ( checkisPalindrome(str) && str.length() > str_long.length()) {
+                    if ( checkisPalindrome(str) && str.length() > str_long.length() ) {
                         str_long = str;
                         check_Palindromic = 1;
                     }
