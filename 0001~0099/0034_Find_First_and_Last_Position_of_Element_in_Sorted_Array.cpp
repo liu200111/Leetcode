@@ -24,12 +24,10 @@ public:
         for (int i = ans[0] + 1; i < nums.size(); ++i) {
             if (nums[i] != target) {
                 ans[1] = i -1;
-                break;
+                return ans;
             }
-            else if ( i == nums.size() - 1) {
+            else if ( i == nums.size() - 1) 
                 ans[1] = i;
-                break;
-            }
         }
         return ans;
     }
