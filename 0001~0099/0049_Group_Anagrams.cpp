@@ -28,19 +28,24 @@ public:
     bool checkAnagram(string target, string input) {
         if ( target.length() != input.length() ) return false;
         else {
-            int count = 0;
-            for (int i = 0; i < target.length(); ++i) {
-                for (int j = 0; j < target.length(); ++j) {
-                    if (target[i] == input[j]) {
-                        count = 1;
-                        input.erase(j, 1);
-                        break;
-                    } 
-                }
-                if (count == 0) return false;
-                count = 0;
-            }
-            return true;
+            sort(target.begin(), target.end());
+            sort(input.begin(), input.end());
+
+            if(target == input) return true;
+            else return false;
+            // int count = 0;
+            // for (int i = 0; i < target.length(); ++i) {
+            //     for (int j = 0; j < target.length(); ++j) {
+            //         if (target[i] == input[j]) {
+            //             count = 1;
+            //             input.erase(j, 1);
+            //             break;
+            //         } 
+            //     }
+            //     if (count == 0) return false;
+            //     count = 0;
+            // }
+            // return true;
         }
     }
 };
