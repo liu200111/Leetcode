@@ -7,7 +7,7 @@ public:
         int boundary_down = n-1;
         int boundary_left = 0;
         int boundary_right = n-1;
-        while ( num <= pow(n, 2) ) {
+        while ( boundary_up <= boundary_down && boundary_left <= boundary_right ) {
             // move right
             for (int i = boundary_left; i <= boundary_right; ++i) {
                 ans[boundary_up][i] = num;
