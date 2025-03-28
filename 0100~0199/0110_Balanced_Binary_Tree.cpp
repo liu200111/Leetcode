@@ -12,7 +12,7 @@
 class Solution {
 public:
     bool isBalanced(TreeNode* root) {
-        if ( !root ) return true;
+        if (!root) return true;
         // else if ( !root -> left ) {
         //     if ( maxDepth(root -> right) > 1 )  return false;
         //     else return true;
@@ -22,17 +22,17 @@ public:
         //     else return true;
         // }
 
-        if ( maxDepth(root -> left) - maxDepth(root -> right) > 1 || maxDepth(root -> left) - maxDepth(root -> right) < -1 ) return false;
-        else return isBalanced(root -> left) && isBalanced(root -> right);  // If any of the subtrees is unbalanced, isBalanced() will return false, which will cause the top layer to also return false.
+        if ( maxDepth(root->left) - maxDepth(root->right) > 1 || maxDepth(root->left) - maxDepth(root->right) < -1 ) return false;
+        else return isBalanced(root->left) && isBalanced(root->right);  // If any of the subtrees is unbalanced, isBalanced() will return false, which will cause the top layer to also return false.
     
     }
     int maxDepth(TreeNode* root) {
-        if ( !root ) return 0;
+        if (!root) return 0;
 
-        int left = maxDepth(root -> left);
-        int right = maxDepth(root -> right);
+        int left = maxDepth(root->left);
+        int right = maxDepth(root->right);
 
-        if ( left > right ) return left + 1;
+        if (left > right) return left + 1;
         else return right + 1;
     }
 };
